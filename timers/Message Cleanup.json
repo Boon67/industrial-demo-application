@@ -1,0 +1,8 @@
+{
+    "description": "Cleans up the message queue",
+    "frequency": 1800,
+    "name": "Message Cleanup",
+    "repeats": -1,
+    "service_name": "clearMessages",
+    "start_time": "2017-09-12T04:00:45Z"
+}
