@@ -1,0 +1,10 @@
+{
+    "current_version": 119,
+    "dependencies": "clearblade,log,lib_helpers",
+    "logging_enabled": "false",
+    "name": "monitorRangeLimits",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "monitorRangeLimits.js"
+}
