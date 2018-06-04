@@ -1,0 +1,10 @@
+{
+    "current_version": 55,
+    "dependencies": "clearblade,log",
+    "logging_enabled": "false",
+    "name": "clearMessages",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "clearMessages.js"
+}
