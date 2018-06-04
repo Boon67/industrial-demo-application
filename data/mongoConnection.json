@@ -1,0 +1,33 @@
+{
+    "app_id": "b498938e0bb6e096ccaae0c9ddfe01",
+    "collection_id": "8c9fe49f0ba898fbd6ebfa90a1e101",
+    "items": [
+        {
+            "dcoumentcolumn": null
+        },
+        {
+            "dcoumentcolumn": "{"
+        },
+        {
+            "dcoumentcolumn": null
+        },
+        {
+            "dcoumentcolumn": null
+        },
+        {
+            "dcoumentcolumn": null
+        },
+        {
+            "dcoumentcolumn": null
+        }
+    ],
+    "name": "mongoConnection",
+    "permissions": {},
+    "schema": [
+        {
+            "ColumnName": "dcoumentcolumn",
+            "ColumnType": "string",
+            "PK": false
+        }
+    ]
+}
