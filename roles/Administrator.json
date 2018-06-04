@@ -1,0 +1,168 @@
+{
+    "Description": "Default role that is applied to a user who has rights to everything",
+    "ID": "Administrator",
+    "Name": "Administrator",
+    "Permissions": {
+        "AllCollections": {
+            "Level": 0
+        },
+        "AllServices": {
+            "Level": 15
+        },
+        "CodeServices": [
+            {
+                "Level": 1,
+                "Name": "acknowledgeAlert",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 1,
+                "Name": "activeAlerts",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 1,
+                "Name": "aggregateTemps",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 1,
+                "Name": "bearingTemps",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 1,
+                "Name": "cumbustionAirTemp",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 1,
+                "Name": "deleteAllAlerts",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 1,
+                "Name": "heaterTemps",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 1,
+                "Name": "startTimer",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            }
+        ],
+        "Collections": [
+            {
+                "Columns": [],
+                "ID": "e8deb59d0baab2e6a89383a8a23d",
+                "Items": [],
+                "Level": 15,
+                "Name": "plantDetails"
+            },
+            {
+                "Columns": [],
+                "ID": "e2b29d8e0bcead8dc7cae8bf8be101",
+                "Items": [],
+                "Level": 15,
+                "Name": "system alerts"
+            }
+        ],
+        "Deployments": {
+            "Level": 0
+        },
+        "DevicesList": {
+            "Level": 0
+        },
+        "EdgesList": {
+            "Level": 0
+        },
+        "MsgHistory": {
+            "Level": 15
+        },
+        "Portals": [
+            {
+                "Level": 0,
+                "Name": "Site A",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "Mixing Plant Monitor v2",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "Mixing Plant A",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "Mixing Plant Monitor",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "Mixing Plant Monitor (Eric's UI)",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "Multiple Mixing Plant Monitoring Demo",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "T1",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "Mixing Plant Monitor MConnected",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "Mixing Plant Monitor Demo",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "Mixing Plant Monitor Summer White",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "Test Portal",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 0,
+                "Name": "Mixing Plant Monitor Route Mobile",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "Locomotive Monitor",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            },
+            {
+                "Level": 15,
+                "Name": "Sample Portal",
+                "SystemKey": "b498938e0bb6e096ccaae0c9ddfe01"
+            }
+        ],
+        "Push": {
+            "Level": 0
+        },
+        "Timers": {
+            "Level": 15
+        },
+        "Topics": [],
+        "Triggers": {
+            "Level": 15
+        },
+        "UsersList": {
+            "Level": 0
+        }
+    }
+}
