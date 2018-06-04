@@ -1,0 +1,12 @@
+{
+    "current_version": 7,
+    "dependencies": "clearblade,lib_helpers",
+    "logging_enabled": "false",
+    "name": "portalAgDryingTempHistory",
+    "params": [],
+    "permissions": {
+        "Authenticated": 1
+    },
+    "run_user": "",
+    "source": "portalAgDryingTempHistory.js"
+}
