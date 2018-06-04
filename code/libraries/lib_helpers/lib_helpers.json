@@ -1,0 +1,8 @@
+{
+    "api": "",
+    "dependencies": "",
+    "description": "Helper Library",
+    "name": "lib_helpers",
+    "version": 18,
+    "visibility": "system"
+}
