@@ -1,0 +1,12 @@
+{
+    "current_version": 7,
+    "dependencies": "lib_helpers,clearblade",
+    "logging_enabled": "false",
+    "name": "portalCombustionMessageHistory",
+    "params": [],
+    "permissions": {
+        "Authenticated": 1
+    },
+    "run_user": "",
+    "source": "portalCombustionMessageHistory.js"
+}
