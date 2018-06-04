@@ -1,0 +1,52 @@
+{
+    "app_id": "b498938e0bb6e096ccaae0c9ddfe01",
+    "collection_id": "e8deb59d0baab2e6a89383a8a23d",
+    "items": [
+        {
+            "city": "Denver",
+            "country": "USA",
+            "errors": 5,
+            "name": "A",
+            "state": "CO"
+        },
+        {
+            "city": "Phoenix",
+            "country": "USA",
+            "errors": 2,
+            "name": "B",
+            "state": "AZ"
+        }
+    ],
+    "name": "plantDetails",
+    "permissions": {
+        "Administrator": 15,
+        "Authenticated": 1
+    },
+    "schema": [
+        {
+            "ColumnName": "country",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "city",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "state",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "name",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "errors",
+            "ColumnType": "int",
+            "PK": false
+        }
+    ]
+}
