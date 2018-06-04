@@ -1,0 +1,8 @@
+{
+    "description": "Generates Data for Demo",
+    "frequency": 30,
+    "name": "GenerateData",
+    "repeats": -1,
+    "service_name": "dataGenerator",
+    "start_time": "2017-05-15T20:39:10Z"
+}
