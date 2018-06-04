@@ -1,0 +1,12 @@
+{
+    "current_version": 9,
+    "dependencies": "clearblade,lib_helpers",
+    "logging_enabled": "false",
+    "name": "portalHeatingAirTempHistory",
+    "params": [],
+    "permissions": {
+        "Authenticated": 1
+    },
+    "run_user": "",
+    "source": "portalHeatingAirTempHistory.js"
+}
