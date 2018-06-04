@@ -1,0 +1,12 @@
+{
+    "current_version": 8,
+    "dependencies": "clearblade,lib_helpers",
+    "logging_enabled": "false",
+    "name": "portalAgEntryTempHistory",
+    "params": [],
+    "permissions": {
+        "Authenticated": 1
+    },
+    "run_user": "",
+    "source": "portalAgEntryTempHistory.js"
+}
