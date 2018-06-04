@@ -1,0 +1,33 @@
+{
+    "app_id": "b498938e0bb6e096ccaae0c9ddfe01",
+    "collection_id": "e2b29d8e0bcead8dc7cae8bf8be101",
+    "items": [],
+    "name": "system alerts",
+    "permissions": {
+        "Administrator": 15,
+        "Anonymous": 1,
+        "Authenticated": 13
+    },
+    "schema": [
+        {
+            "ColumnName": "alerttime",
+            "ColumnType": "timestamp",
+            "PK": false
+        },
+        {
+            "ColumnName": "alertmessage",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "alertvalue",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "ack",
+            "ColumnType": "bool",
+            "PK": false
+        }
+    ]
+}
