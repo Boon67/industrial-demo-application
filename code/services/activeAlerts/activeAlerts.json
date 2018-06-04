@@ -1,0 +1,14 @@
+{
+    "current_version": 45,
+    "dependencies": "clearblade",
+    "logging_enabled": "false",
+    "name": "activeAlerts",
+    "params": [],
+    "permissions": {
+        "Administrator": 1,
+        "Anonymous": 1,
+        "Authenticated": 1
+    },
+    "run_user": "",
+    "source": "activeAlerts.js"
+}
