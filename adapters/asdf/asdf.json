@@ -1,0 +1,14 @@
+{
+    "architecture": "linux386",
+    "deploy_command": "",
+    "description": "",
+    "logs_command": "",
+    "name": "asdf",
+    "os": "",
+    "protocol": "",
+    "start_command": "",
+    "status_command": "",
+    "stop_command": "",
+    "undeploy_command": "",
+    "version": 1
+}
