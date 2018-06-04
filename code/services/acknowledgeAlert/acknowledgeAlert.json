@@ -1,0 +1,16 @@
+{
+    "current_version": 66,
+    "dependencies": "clearblade,log",
+    "logging_enabled": "false",
+    "name": "acknowledgeAlert",
+    "params": [
+        "item_id"
+    ],
+    "permissions": {
+        "Administrator": 1,
+        "Anonymous": 1,
+        "Authenticated": 1
+    },
+    "run_user": "eaa7938e0bc68581c7aabd9cba16",
+    "source": "acknowledgeAlert.js"
+}
