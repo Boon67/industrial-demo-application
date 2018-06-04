@@ -1,0 +1,3653 @@
+{
+    "config": {
+        "cols": {
+            "lg": 12,
+            "md": 10,
+            "sm": 6,
+            "xs": 4,
+            "xxs": 2
+        },
+        "currentBreakpointForFlyoutWidgets": "lg",
+        "currentBreakpointForPanes": "lg",
+        "currentBreakpointsForWidgets": {
+            "3b98918b-d3a6-4c43-8894-cfdf41af1950": "lg",
+            "5ab6f02d-80be-4916-8977-8a86f7d7a7d2": "lg",
+            "6032735c-fc89-4040-a359-11f2f928ee1d": "lg",
+            "7a2ebcf7-a290-47a8-9936-192ca711811c": "lg",
+            "7d162da6-9d53-421f-b0f7-370eeb445354": "xxs",
+            "83fe6e02-d83a-45b0-a27d-df574b2312ef": "xs",
+            "9c387810-ff15-4951-9418-298016596fd7": "xs",
+            "d5c5d2ca-d8ed-4af0-b1a2-595c81f59424": "lg",
+            "db872c4b-b38f-445b-9da6-3b624e778ecb": "xxs"
+        },
+        "datasources": {
+            "18febd1f-fdd0-4613-ab41-052d1b7270bd": {
+                "id": "18febd1f-fdd0-4613-ab41-052d1b7270bd",
+                "name": "Aggregate Drying Temp",
+                "settings": {
+                    "TOPIC_NAME": "MixingPlant/A/DryingAggregateTemp"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "23197a7a-a075-4e08-a1aa-432177f2cb3a": {
+                "id": "23197a7a-a075-4e08-a1aa-432177f2cb3a",
+                "name": "Aggregate Heating Temp",
+                "settings": {
+                    "TOPIC_NAME": "MixingPlant/A/HeatingAggregateTemp"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "26b714c8-caee-4e52-b98f-8f112018d073": {
+                "id": "26b714c8-caee-4e52-b98f-8f112018d073",
+                "name": "Exhaust Air Temp",
+                "settings": {
+                    "TOPIC_NAME": "MixingPlant/A/ExhaustAirTemp"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "29755d0b-8b19-47b9-b6ab-20f2df2ac75a": {
+                "id": "29755d0b-8b19-47b9-b6ab-20f2df2ac75a",
+                "name": "Heating Air Temp",
+                "settings": {
+                    "TOPIC_NAME": "MixingPlant/A/HeatingAirTemp"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "2e58c0f7-4b18-4225-8368-46566a5f9caa": {
+                "id": "2e58c0f7-4b18-4225-8368-46566a5f9caa",
+                "name": "Entry Aggregate Temp",
+                "settings": {
+                    "TOPIC_NAME": "MixingPlant/A/EntryAggregateTemp"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "3ce99a9a-5be5-40eb-8f31-d68a63d7ead9": {
+                "id": "3ce99a9a-5be5-40eb-8f31-d68a63d7ead9",
+                "name": "Drying Air Temp",
+                "settings": {
+                    "TOPIC_NAME": "MixingPlant/A/DryingAirTemp"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "3dcebbdf-a66a-455d-959b-fe67f6c13e7f": {
+                "id": "3dcebbdf-a66a-455d-959b-fe67f6c13e7f",
+                "name": "AgDryingTempHistory",
+                "settings": {
+                    "code_name": "portalAgDryingTempHistory",
+                    "refresh_interval": 600,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "6abc9060-db20-4641-bd2e-cc68789840a7": {
+                "id": "6abc9060-db20-4641-bd2e-cc68789840a7",
+                "name": "AirHeatingTempHistory",
+                "settings": {
+                    "code_name": "portalHeatingAirTempHistory",
+                    "refresh_interval": 600,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "72465f05-b962-4145-9de5-99b860e84449": {
+                "id": "72465f05-b962-4145-9de5-99b860e84449",
+                "name": "activeAlerts",
+                "settings": {
+                    "code_name": "activeAlerts",
+                    "refresh_interval": 10,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "9f573ad3-b5d1-41b8-a670-a9345d85669e": {
+                "id": "9f573ad3-b5d1-41b8-a670-a9345d85669e",
+                "name": "AgExitTempHistory",
+                "settings": {
+                    "code_name": "portalAgExitTempHistory",
+                    "refresh_interval": 600,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "a38e94b6-32c9-4a8c-a6da-5f765ddbec57": {
+                "id": "a38e94b6-32c9-4a8c-a6da-5f765ddbec57",
+                "name": "Combustion Air Temp",
+                "settings": {
+                    "TOPIC_NAME": "MixingPlant/A/CombustionAirTemp"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "ab5e9c9a-c388-4c50-ad2a-c3c754408e66": {
+                "id": "ab5e9c9a-c388-4c50-ad2a-c3c754408e66",
+                "name": "Aggregate Exit Temp",
+                "settings": {
+                    "TOPIC_NAME": "MixingPlant/A/ExitAggregateTemp"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "acd3ec13-5200-4821-b8a9-e3f02fcaec41": {
+                "id": "acd3ec13-5200-4821-b8a9-e3f02fcaec41",
+                "name": "AirExhaustTempHistory",
+                "settings": {
+                    "code_name": "portalExhaustAirTempHistory",
+                    "refresh_interval": 60,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "b18137b8-ef77-445c-8e39-a5e8df90f123": {
+                "id": "b18137b8-ef77-445c-8e39-a5e8df90f123",
+                "name": "AgHeatingTempHistory",
+                "settings": {
+                    "code_name": "portalAgHeatingTempHistory",
+                    "refresh_interval": 600,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "c55db039-f0cb-4260-8df0-bd0b1b8bb537": {
+                "id": "c55db039-f0cb-4260-8df0-bd0b1b8bb537",
+                "name": "AirCombustionTempHistory",
+                "settings": {
+                    "code_name": "portalCombustionMessageHistory",
+                    "refresh_interval": 600,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "d33de48d-975e-40ec-9445-45c3e8243d74": {
+                "id": "d33de48d-975e-40ec-9445-45c3e8243d74",
+                "name": "bearing1Temp",
+                "settings": {
+                    "TOPIC_NAME": "MixingPlant/A/bearing/bearing1/bearingtemperature"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "e022b376-dc52-4de8-b296-a012b1634a50": {
+                "id": "e022b376-dc52-4de8-b296-a012b1634a50",
+                "name": "AgEntryTempHIstory",
+                "settings": {
+                    "code_name": "portalAgEntryTempHistory",
+                    "refresh_interval": 600,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "f120cb99-708a-4d46-a550-76cc2b33f4e7": {
+                "id": "f120cb99-708a-4d46-a550-76cc2b33f4e7",
+                "name": "bearing1RPM",
+                "settings": {
+                    "TOPIC_NAME": "MixingPlant/A/bearing/bearing1/bearingrpm"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "fa2a2f8f-c019-4385-8505-c1a4134372ea": {
+                "id": "fa2a2f8f-c019-4385-8505-c1a4134372ea",
+                "name": "DryingAirTempHistory",
+                "settings": {
+                    "code_name": "portalDryingAirTempHistory",
+                    "refresh_interval": 600,
+                    "undefined": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            }
+        },
+        "flyoutWidgetLayout": {
+            "lg": [],
+            "md": [],
+            "sm": [],
+            "xs": [],
+            "xxs": []
+        },
+        "headerWidgetLayout": {
+            "lg": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 42,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 46,
+                    "x": 185,
+                    "y": 0
+                }
+            ],
+            "md": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 39,
+                    "x": 154,
+                    "y": 0
+                }
+            ],
+            "sm": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 34,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 37,
+                    "x": 117,
+                    "y": 0
+                }
+            ],
+            "xs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 28,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 31,
+                    "x": 71,
+                    "y": 0
+                }
+            ],
+            "xxs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 32,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 33,
+                    "x": 47,
+                    "y": 0
+                }
+            ]
+        },
+        "pages": {
+            "Home": {
+                "children": [],
+                "defaultValue": "",
+                "href": "",
+                "id": "Home",
+                "isChild": false,
+                "isParam": false,
+                "name": "Home",
+                "path": ""
+            }
+        },
+        "paneGridWidgetLayouts": {
+            "3b98918b-d3a6-4c43-8894-cfdf41af1950": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "06415a78-1deb-483b-8976-587a3310b1a3",
+                        "w": 4,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "5ab6f02d-80be-4916-8977-8a86f7d7a7d2": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "8c7d59e9-0529-4f26-a98c-95ba8ea12a7a",
+                        "w": 13,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "6032735c-fc89-4040-a359-11f2f928ee1d": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "86300222-8b0e-4420-b305-93871923f65d",
+                        "w": 13,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "7a2ebcf7-a290-47a8-9936-192ca711811c": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "7a259898-2ed0-4093-973e-66c4d12dae8a",
+                        "w": 3,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "7d162da6-9d53-421f-b0f7-370eeb445354": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "9423d61c-7298-4321-a636-5c5b8704c915",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": [
+                    {
+                        "h": 9,
+                        "i": "9423d61c-7298-4321-a636-5c5b8704c915",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            "83fe6e02-d83a-45b0-a27d-df574b2312ef": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "bed3f844-4e2c-4c10-977c-12915200f777",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "20c49741-9444-4d27-aa89-fa3d4560c31b",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 3,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "94738c68-908d-4030-940b-8448f2b64a5c",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 6,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "d379fa26-6671-40b3-a67e-5464b8c101bc",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 9,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "f6cd8b10-b19b-4d6d-b2fb-4a61284fb705",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 0,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "63e29eaa-6831-4884-b44d-1ffa1d1e65a2",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 3,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "3c19557d-343b-4f1d-a8af-5ddc28f48afb",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 6,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "d2c13a06-eae2-459d-b5dc-8711f2d56e9d",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 9,
+                        "y": 9
+                    }
+                ],
+                "md": [
+                    {
+                        "h": 9,
+                        "i": "bed3f844-4e2c-4c10-977c-12915200f777",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "20c49741-9444-4d27-aa89-fa3d4560c31b",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 1,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "94738c68-908d-4030-940b-8448f2b64a5c",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 2,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "d379fa26-6671-40b3-a67e-5464b8c101bc",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 3,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "f6cd8b10-b19b-4d6d-b2fb-4a61284fb705",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 1,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "63e29eaa-6831-4884-b44d-1ffa1d1e65a2",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 1,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "3c19557d-343b-4f1d-a8af-5ddc28f48afb",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 1,
+                        "y": 27
+                    },
+                    {
+                        "h": 9,
+                        "i": "d2c13a06-eae2-459d-b5dc-8711f2d56e9d",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 1,
+                        "y": 36
+                    }
+                ],
+                "sm": [
+                    {
+                        "h": 9,
+                        "i": "bed3f844-4e2c-4c10-977c-12915200f777",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "20c49741-9444-4d27-aa89-fa3d4560c31b",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "94738c68-908d-4030-940b-8448f2b64a5c",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "d379fa26-6671-40b3-a67e-5464b8c101bc",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 27
+                    },
+                    {
+                        "h": 9,
+                        "i": "f6cd8b10-b19b-4d6d-b2fb-4a61284fb705",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "63e29eaa-6831-4884-b44d-1ffa1d1e65a2",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "3c19557d-343b-4f1d-a8af-5ddc28f48afb",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "d2c13a06-eae2-459d-b5dc-8711f2d56e9d",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 27
+                    }
+                ],
+                "xs": [
+                    {
+                        "h": 9,
+                        "i": "bed3f844-4e2c-4c10-977c-12915200f777",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "20c49741-9444-4d27-aa89-fa3d4560c31b",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "94738c68-908d-4030-940b-8448f2b64a5c",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "d379fa26-6671-40b3-a67e-5464b8c101bc",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 27
+                    },
+                    {
+                        "h": 9,
+                        "i": "f6cd8b10-b19b-4d6d-b2fb-4a61284fb705",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 2,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "63e29eaa-6831-4884-b44d-1ffa1d1e65a2",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 2,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "3c19557d-343b-4f1d-a8af-5ddc28f48afb",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 2,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "d2c13a06-eae2-459d-b5dc-8711f2d56e9d",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 2,
+                        "y": 27
+                    }
+                ],
+                "xxs": [
+                    {
+                        "h": 9,
+                        "i": "bed3f844-4e2c-4c10-977c-12915200f777",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "20c49741-9444-4d27-aa89-fa3d4560c31b",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "94738c68-908d-4030-940b-8448f2b64a5c",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "d379fa26-6671-40b3-a67e-5464b8c101bc",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 27
+                    },
+                    {
+                        "h": 9,
+                        "i": "f6cd8b10-b19b-4d6d-b2fb-4a61284fb705",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 0,
+                        "y": 36
+                    },
+                    {
+                        "h": 9,
+                        "i": "63e29eaa-6831-4884-b44d-1ffa1d1e65a2",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 1,
+                        "y": 36
+                    },
+                    {
+                        "h": 9,
+                        "i": "3c19557d-343b-4f1d-a8af-5ddc28f48afb",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 0,
+                        "y": 45
+                    },
+                    {
+                        "h": 9,
+                        "i": "d2c13a06-eae2-459d-b5dc-8711f2d56e9d",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 1,
+                        "y": 45
+                    }
+                ]
+            },
+            "9c387810-ff15-4951-9418-298016596fd7": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "dd4eff63-392e-4100-bb2f-f1d5e4a54327",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 3,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "387426b7-c3de-4c7a-b4b3-893b116dece5",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 6,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "701e8b88-1afa-41f3-91ee-84ce0b9eea9d",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 9,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "7ee44094-5b8c-40d3-aaa0-7adadf4729a2",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "d04ae71c-6f6d-4948-8cc1-e080f2c101ac",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 0,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "30c4742c-ec24-4a65-a1ec-cbc90b09efd7",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 3,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "3dfd37e8-4e68-4510-ac87-1eccb01421b3",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 6,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "758b9491-5c76-40f1-95d5-9f0db7cbb793",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 9,
+                        "y": 9
+                    }
+                ],
+                "md": [
+                    {
+                        "h": 9,
+                        "i": "dd4eff63-392e-4100-bb2f-f1d5e4a54327",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "387426b7-c3de-4c7a-b4b3-893b116dece5",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "701e8b88-1afa-41f3-91ee-84ce0b9eea9d",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 27
+                    },
+                    {
+                        "h": 9,
+                        "i": "7ee44094-5b8c-40d3-aaa0-7adadf4729a2",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "d04ae71c-6f6d-4948-8cc1-e080f2c101ac",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 2,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "30c4742c-ec24-4a65-a1ec-cbc90b09efd7",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 2,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "3dfd37e8-4e68-4510-ac87-1eccb01421b3",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 2,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "758b9491-5c76-40f1-95d5-9f0db7cbb793",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 2,
+                        "y": 27
+                    }
+                ],
+                "sm": [
+                    {
+                        "h": 9,
+                        "i": "dd4eff63-392e-4100-bb2f-f1d5e4a54327",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "387426b7-c3de-4c7a-b4b3-893b116dece5",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "701e8b88-1afa-41f3-91ee-84ce0b9eea9d",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 27
+                    },
+                    {
+                        "h": 9,
+                        "i": "7ee44094-5b8c-40d3-aaa0-7adadf4729a2",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "d04ae71c-6f6d-4948-8cc1-e080f2c101ac",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "30c4742c-ec24-4a65-a1ec-cbc90b09efd7",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "3dfd37e8-4e68-4510-ac87-1eccb01421b3",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "758b9491-5c76-40f1-95d5-9f0db7cbb793",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 27
+                    }
+                ],
+                "xs": [
+                    {
+                        "h": 9,
+                        "i": "dd4eff63-392e-4100-bb2f-f1d5e4a54327",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "387426b7-c3de-4c7a-b4b3-893b116dece5",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "701e8b88-1afa-41f3-91ee-84ce0b9eea9d",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 27
+                    },
+                    {
+                        "h": 9,
+                        "i": "7ee44094-5b8c-40d3-aaa0-7adadf4729a2",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "d04ae71c-6f6d-4948-8cc1-e080f2c101ac",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 2,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "30c4742c-ec24-4a65-a1ec-cbc90b09efd7",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 2,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "3dfd37e8-4e68-4510-ac87-1eccb01421b3",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 2,
+                        "y": 27
+                    },
+                    {
+                        "h": 9,
+                        "i": "758b9491-5c76-40f1-95d5-9f0db7cbb793",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 2,
+                        "y": 18
+                    }
+                ],
+                "xxs": [
+                    {
+                        "h": 9,
+                        "i": "dd4eff63-392e-4100-bb2f-f1d5e4a54327",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "387426b7-c3de-4c7a-b4b3-893b116dece5",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "701e8b88-1afa-41f3-91ee-84ce0b9eea9d",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 27
+                    },
+                    {
+                        "h": 9,
+                        "i": "7ee44094-5b8c-40d3-aaa0-7adadf4729a2",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "d04ae71c-6f6d-4948-8cc1-e080f2c101ac",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 0,
+                        "y": 36
+                    },
+                    {
+                        "h": 9,
+                        "i": "30c4742c-ec24-4a65-a1ec-cbc90b09efd7",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 1,
+                        "y": 36
+                    },
+                    {
+                        "h": 9,
+                        "i": "3dfd37e8-4e68-4510-ac87-1eccb01421b3",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 0,
+                        "y": 45
+                    },
+                    {
+                        "h": 9,
+                        "i": "758b9491-5c76-40f1-95d5-9f0db7cbb793",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 1,
+                        "y": 45
+                    }
+                ]
+            },
+            "d5c5d2ca-d8ed-4af0-b1a2-595c81f59424": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "ef0c8462-d589-4173-b6fe-4cfa1eb98275",
+                        "w": 7,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "db872c4b-b38f-445b-9da6-3b624e778ecb": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "6a1e0187-240c-491a-a490-1b4340e355b7",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "08e25676-1320-4ce3-b86d-8968f9734fbf",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 0,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "9b19bb54-f515-43ec-9cc5-2cd9f27363d0",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 0,
+                        "y": 27
+                    },
+                    {
+                        "h": 9,
+                        "i": "aa58b7bf-aed3-4a84-8246-65c9b6a327cc",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 18
+                    }
+                ],
+                "md": [],
+                "sm": [
+                    {
+                        "h": 9,
+                        "i": "6a1e0187-240c-491a-a490-1b4340e355b7",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "08e25676-1320-4ce3-b86d-8968f9734fbf",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 1,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "9b19bb54-f515-43ec-9cc5-2cd9f27363d0",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 3,
+                        "y": 9
+                    },
+                    {
+                        "h": 9,
+                        "i": "aa58b7bf-aed3-4a84-8246-65c9b6a327cc",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 2,
+                        "y": 0
+                    }
+                ],
+                "xs": [
+                    {
+                        "h": 9,
+                        "i": "6a1e0187-240c-491a-a490-1b4340e355b7",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "08e25676-1320-4ce3-b86d-8968f9734fbf",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 1,
+                        "y": 0
+                    },
+                    {
+                        "h": 18,
+                        "i": "9b19bb54-f515-43ec-9cc5-2cd9f27363d0",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 2,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "aa58b7bf-aed3-4a84-8246-65c9b6a327cc",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 9
+                    }
+                ],
+                "xxs": [
+                    {
+                        "h": 9,
+                        "i": "6a1e0187-240c-491a-a490-1b4340e355b7",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "08e25676-1320-4ce3-b86d-8968f9734fbf",
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 1,
+                        "y": 0
+                    },
+                    {
+                        "h": 9,
+                        "i": "9b19bb54-f515-43ec-9cc5-2cd9f27363d0",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 18
+                    },
+                    {
+                        "h": 9,
+                        "i": "aa58b7bf-aed3-4a84-8246-65c9b6a327cc",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 9
+                    }
+                ]
+            }
+        },
+        "paneLayouts": {
+            "Home": {
+                "lg": [
+                    {
+                        "h": 3,
+                        "i": "79a56da4-1d24-4f01-a921-ad6b52a7b2e8",
+                        "moved": false,
+                        "static": false,
+                        "w": 5,
+                        "x": 2,
+                        "y": 3
+                    },
+                    {
+                        "h": 3,
+                        "i": "b3f2b36c-c916-499c-a806-7e0900488ff1",
+                        "moved": false,
+                        "static": false,
+                        "w": 5,
+                        "x": 2,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "95f1d64e-d140-45ec-b5c2-6ddc518c0369",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 1
+                    },
+                    {
+                        "h": 4,
+                        "i": "ca666636-4b1b-4b7b-9091-ccef9f625da2",
+                        "moved": false,
+                        "static": false,
+                        "w": 9,
+                        "x": 2,
+                        "y": 6
+                    },
+                    {
+                        "h": 4,
+                        "i": "29a39ced-a84d-4ced-ae68-8899012f80e6",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 10,
+                        "y": 0
+                    },
+                    {
+                        "h": 4,
+                        "i": "69327b58-7646-464f-9efa-02c4576d41ba",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 3
+                    },
+                    {
+                        "h": 1,
+                        "i": "c47708ac-28f2-44cf-99c3-e262532ae89d",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "bc229ec5-44bb-473c-96d4-a665a483c7d7",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 7,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "c6f0146e-5db4-4c14-b793-22048110ca47",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 7,
+                        "y": 2
+                    }
+                ],
+                "md": [
+                    {
+                        "h": 5,
+                        "i": "79a56da4-1d24-4f01-a921-ad6b52a7b2e8",
+                        "moved": false,
+                        "static": false,
+                        "w": 5,
+                        "x": 0,
+                        "y": 3
+                    },
+                    {
+                        "h": 5,
+                        "i": "b3f2b36c-c916-499c-a806-7e0900488ff1",
+                        "moved": false,
+                        "static": false,
+                        "w": 5,
+                        "x": 5,
+                        "y": 3
+                    },
+                    {
+                        "h": 2,
+                        "i": "95f1d64e-d140-45ec-b5c2-6ddc518c0369",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 1
+                    },
+                    {
+                        "h": 4,
+                        "i": "ca666636-4b1b-4b7b-9091-ccef9f625da2",
+                        "moved": false,
+                        "static": false,
+                        "w": 8,
+                        "x": 1,
+                        "y": 11
+                    },
+                    {
+                        "h": 3,
+                        "i": "29a39ced-a84d-4ced-ae68-8899012f80e6",
+                        "moved": false,
+                        "static": false,
+                        "w": 6,
+                        "x": 0,
+                        "y": 8
+                    },
+                    {
+                        "h": 3,
+                        "i": "69327b58-7646-464f-9efa-02c4576d41ba",
+                        "moved": false,
+                        "static": false,
+                        "w": 5,
+                        "x": 2,
+                        "y": 0
+                    },
+                    {
+                        "h": 1,
+                        "i": "c47708ac-28f2-44cf-99c3-e262532ae89d",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 3,
+                        "i": "bc229ec5-44bb-473c-96d4-a665a483c7d7",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 7,
+                        "y": 0
+                    },
+                    {
+                        "h": 3,
+                        "i": "c6f0146e-5db4-4c14-b793-22048110ca47",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 6,
+                        "y": 8
+                    }
+                ],
+                "sm": [
+                    {
+                        "h": 5,
+                        "i": "79a56da4-1d24-4f01-a921-ad6b52a7b2e8",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 0,
+                        "y": 2
+                    },
+                    {
+                        "h": 5,
+                        "i": "b3f2b36c-c916-499c-a806-7e0900488ff1",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 3,
+                        "y": 2
+                    },
+                    {
+                        "h": 2,
+                        "i": "95f1d64e-d140-45ec-b5c2-6ddc518c0369",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 7
+                    },
+                    {
+                        "h": 2,
+                        "i": "ca666636-4b1b-4b7b-9091-ccef9f625da2",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 9
+                    },
+                    {
+                        "h": 2,
+                        "i": "29a39ced-a84d-4ced-ae68-8899012f80e6",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 9
+                    },
+                    {
+                        "h": 2,
+                        "i": "69327b58-7646-464f-9efa-02c4576d41ba",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 1,
+                        "i": "c47708ac-28f2-44cf-99c3-e262532ae89d",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 4,
+                        "y": 1
+                    },
+                    {
+                        "h": 1,
+                        "i": "bc229ec5-44bb-473c-96d4-a665a483c7d7",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 4,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "c6f0146e-5db4-4c14-b793-22048110ca47",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 7
+                    }
+                ],
+                "xs": [
+                    {
+                        "h": 4,
+                        "i": "79a56da4-1d24-4f01-a921-ad6b52a7b2e8",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 0,
+                        "y": 4
+                    },
+                    {
+                        "h": 4,
+                        "i": "b3f2b36c-c916-499c-a806-7e0900488ff1",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 0,
+                        "y": 8
+                    },
+                    {
+                        "h": 2,
+                        "i": "95f1d64e-d140-45ec-b5c2-6ddc518c0369",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 2,
+                        "y": 12
+                    },
+                    {
+                        "h": 4,
+                        "i": "ca666636-4b1b-4b7b-9091-ccef9f625da2",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 0,
+                        "y": 16
+                    },
+                    {
+                        "h": 2,
+                        "i": "29a39ced-a84d-4ced-ae68-8899012f80e6",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 0,
+                        "y": 14
+                    },
+                    {
+                        "h": 2,
+                        "i": "69327b58-7646-464f-9efa-02c4576d41ba",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 0,
+                        "y": 2
+                    },
+                    {
+                        "h": 1,
+                        "i": "c47708ac-28f2-44cf-99c3-e262532ae89d",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 1,
+                        "i": "bc229ec5-44bb-473c-96d4-a665a483c7d7",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 0,
+                        "y": 1
+                    },
+                    {
+                        "h": 2,
+                        "i": "c6f0146e-5db4-4c14-b793-22048110ca47",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 12
+                    }
+                ],
+                "xxs": [
+                    {
+                        "h": 5,
+                        "i": "79a56da4-1d24-4f01-a921-ad6b52a7b2e8",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 3
+                    },
+                    {
+                        "h": 5,
+                        "i": "b3f2b36c-c916-499c-a806-7e0900488ff1",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 8
+                    },
+                    {
+                        "h": 2,
+                        "i": "95f1d64e-d140-45ec-b5c2-6ddc518c0369",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 16
+                    },
+                    {
+                        "h": 4,
+                        "i": "ca666636-4b1b-4b7b-9091-ccef9f625da2",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 20
+                    },
+                    {
+                        "h": 2,
+                        "i": "29a39ced-a84d-4ced-ae68-8899012f80e6",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 18
+                    },
+                    {
+                        "h": 2,
+                        "i": "69327b58-7646-464f-9efa-02c4576d41ba",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 1
+                    },
+                    {
+                        "h": 1,
+                        "i": "c47708ac-28f2-44cf-99c3-e262532ae89d",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 1,
+                        "i": "bc229ec5-44bb-473c-96d4-a665a483c7d7",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 15
+                    },
+                    {
+                        "h": 2,
+                        "i": "c6f0146e-5db4-4c14-b793-22048110ca47",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 13
+                    }
+                ]
+            }
+        },
+        "panes": {
+            "29a39ced-a84d-4ced-ae68-8899012f80e6": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": "Truck Routes"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": true,
+                "id": "29a39ced-a84d-4ced-ae68-8899012f80e6",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "7a2ebcf7-a290-47a8-9936-192ca711811c",
+                    "tabIds": [
+                        "7a2ebcf7-a290-47a8-9936-192ca711811c"
+                    ],
+                    "tabTitles": {
+                        "7a2ebcf7-a290-47a8-9936-192ca711811c": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "69327b58-7646-464f-9efa-02c4576d41ba": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": "Bearing Monitor"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": true,
+                "id": "69327b58-7646-464f-9efa-02c4576d41ba",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "db872c4b-b38f-445b-9da6-3b624e778ecb",
+                    "tabIds": [
+                        "db872c4b-b38f-445b-9da6-3b624e778ecb"
+                    ],
+                    "tabTitles": {
+                        "db872c4b-b38f-445b-9da6-3b624e778ecb": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "79a56da4-1d24-4f01-a921-ad6b52a7b2e8": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": "Air Temps"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": true,
+                "id": "79a56da4-1d24-4f01-a921-ad6b52a7b2e8",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "9c387810-ff15-4951-9418-298016596fd7",
+                    "tabIds": [
+                        "9c387810-ff15-4951-9418-298016596fd7"
+                    ],
+                    "tabTitles": {
+                        "9c387810-ff15-4951-9418-298016596fd7": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "95f1d64e-d140-45ec-b5c2-6ddc518c0369": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": "Video"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": true,
+                "id": "95f1d64e-d140-45ec-b5c2-6ddc518c0369",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "3b98918b-d3a6-4c43-8894-cfdf41af1950",
+                    "tabIds": [
+                        "3b98918b-d3a6-4c43-8894-cfdf41af1950"
+                    ],
+                    "tabTitles": {
+                        "3b98918b-d3a6-4c43-8894-cfdf41af1950": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "b3f2b36c-c916-499c-a806-7e0900488ff1": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": "Aggregate Temps"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": true,
+                "id": "b3f2b36c-c916-499c-a806-7e0900488ff1",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "83fe6e02-d83a-45b0-a27d-df574b2312ef",
+                    "tabIds": [
+                        "83fe6e02-d83a-45b0-a27d-df574b2312ef"
+                    ],
+                    "tabTitles": {
+                        "83fe6e02-d83a-45b0-a27d-df574b2312ef": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "bc229ec5-44bb-473c-96d4-a665a483c7d7": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": "Alerts"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": true,
+                "id": "bc229ec5-44bb-473c-96d4-a665a483c7d7",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "5ab6f02d-80be-4916-8977-8a86f7d7a7d2",
+                    "tabIds": [
+                        "5ab6f02d-80be-4916-8977-8a86f7d7a7d2"
+                    ],
+                    "tabTitles": {
+                        "5ab6f02d-80be-4916-8977-8a86f7d7a7d2": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "c47708ac-28f2-44cf-99c3-e262532ae89d": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": true,
+                "id": "c47708ac-28f2-44cf-99c3-e262532ae89d",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "7d162da6-9d53-421f-b0f7-370eeb445354",
+                    "tabIds": [
+                        "7d162da6-9d53-421f-b0f7-370eeb445354"
+                    ],
+                    "tabTitles": {
+                        "7d162da6-9d53-421f-b0f7-370eeb445354": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "c6f0146e-5db4-4c14-b793-22048110ca47": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": "Weather"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "c6f0146e-5db4-4c14-b793-22048110ca47",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "d5c5d2ca-d8ed-4af0-b1a2-595c81f59424",
+                    "tabIds": [
+                        "d5c5d2ca-d8ed-4af0-b1a2-595c81f59424"
+                    ],
+                    "tabTitles": {
+                        "d5c5d2ca-d8ed-4af0-b1a2-595c81f59424": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "ca666636-4b1b-4b7b-9091-ccef9f625da2": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": true,
+                "id": "ca666636-4b1b-4b7b-9091-ccef9f625da2",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "6032735c-fc89-4040-a359-11f2f928ee1d",
+                    "tabIds": [
+                        "6032735c-fc89-4040-a359-11f2f928ee1d"
+                    ],
+                    "tabTitles": {
+                        "6032735c-fc89-4040-a359-11f2f928ee1d": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            }
+        },
+        "savedPortalExists": true,
+        "theme": {
+            "graph": {
+                "four": "#E8E7C6",
+                "one": "#6E8592",
+                "three": "#DBA5A8",
+                "two": "#6E93A8"
+            },
+            "info": {
+                "display_name": "Standard",
+                "name": "STANDARD_THEME"
+            },
+            "items": {
+                "main": {
+                    "header": {
+                        "burgerBars": {
+                            "fontColor": "#f5f5f5"
+                        },
+                        "dropdown": {
+                            "fontColor": "#f5f5f5",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "styles": {
+                            "backgroundColor": "#6e8592"
+                        }
+                    },
+                    "panes": {
+                        "flyout": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#6e8592"
+                            }
+                        },
+                        "primary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#6e8592"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#425864",
+                                "backgroundColor": "#9db5c2",
+                                "fontColor": "#000000"
+                            }
+                        },
+                        "secondary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#9db5c2"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#425864",
+                                "backgroundColor": "#6e8592",
+                                "fontColor": "#000000"
+                            }
+                        }
+                    },
+                    "portal": {
+                        "styles": {
+                            "backgroundColor": "#ffffff"
+                        }
+                    },
+                    "widgets": {
+                        "BAR_CHART_WIDGET_COMPONENT": {
+                            "barColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ],
+                            "brushStroke": "#6e8592",
+                            "legendColor": "#000000"
+                        },
+                        "BUTTON_WIDGET_COMPONENT": {
+                            "backgroundColor": "#f5f5f5",
+                            "backgroundHoverColor": "#c2c2c2",
+                            "borderColor": "#cccccc",
+                            "fontColor": "#000000"
+                        },
+                        "GOOGLE_MAP_WIDGET_COMPONENT": {
+                            "mapTheme": ""
+                        },
+                        "LINE_CHART_WIDGET_COMPONENT": {
+                            "brushStroke": "#6e8592",
+                            "legendColor": "#000000",
+                            "lineColors": [
+                                {
+                                    "stroke": "#6E8592"
+                                },
+                                {
+                                    "stroke": "#6E93A8"
+                                },
+                                {
+                                    "stroke": "#DBA5A8"
+                                },
+                                {
+                                    "stroke": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#6e8592",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "PIE_CHART_WIDGET_COMPONENT": {
+                            "cells": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "RADIAL_GAUGE_WIDGET_COMPONENT": {
+                            "backgroundColor": "#c2c2c2",
+                            "progressColor": "#6e8592"
+                        },
+                        "SPEEDOMETER_WIDGET": {
+                            "arrowColor": "#000000",
+                            "sectionColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "TEXT_WIDGET_COMPONENT": {
+                            "fontColor": "#000000",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "TOGGLE_WIDGET": {
+                            "backgroundColor": "#c2c2c2",
+                            "fontColor": "#000000",
+                            "offColor": "#ffffff",
+                            "onColor": "#6e8592"
+                        }
+                    }
+                }
+            },
+            "palette": {
+                "darkPrimary": "#c2c2c2",
+                "darkSecondary": "#425864",
+                "defaultPrimary": "#f5f5f5",
+                "defaultSecondary": "#6e8592",
+                "lightPrimary": "#ffffff",
+                "lightSecondary": "#9db5c2",
+                "primaryText": "#000000",
+                "secondaryText": "#000000"
+            }
+        },
+        "upgradesPerformed": {
+            "flyoutTitleUpgrade": true,
+            "headerBrandUpgrade": true,
+            "headerTitleUpgrade": true,
+            "widgetResizeUpgrade": true
+        },
+        "widgets": {
+            "0151636a-d18a-4946-9017-9b026c3f8f10": {
+                "id": "0151636a-d18a-4946-9017-9b026c3f8f10",
+                "props": {},
+                "type": ""
+            },
+            "06415a78-1deb-483b-8976-587a3310b1a3": {
+                "id": "06415a78-1deb-483b-8976-587a3310b1a3",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".underline {\n  text-decoration: underline;\n}\n",
+                                "HTML": "\u003cdiv class=\"text-center underline\"\u003e\n  \u003ch2\u003eHTML Widget\u003c/h2\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\n"
+                            }
+                        },
+                        "value": {
+                            "0": "{",
+                            "1": "\"",
+                            "10": "d",
+                            "100": "t",
+                            "101": "r",
+                            "102": "o",
+                            "103": "l",
+                            "104": "s",
+                            "105": "=",
+                            "106": "0",
+                            "107": "\u0026",
+                            "108": "s",
+                            "109": "h",
+                            "11": "i",
+                            "110": "o",
+                            "111": "w",
+                            "112": "i",
+                            "113": "n",
+                            "114": "f",
+                            "115": "o",
+                            "116": "=",
+                            "117": "0",
+                            "118": "\u0026",
+                            "119": "l",
+                            "12": "v",
+                            "120": "o",
+                            "121": "o",
+                            "122": "p",
+                            "123": "=",
+                            "124": "1",
+                            "125": "\u0026",
+                            "126": "p",
+                            "127": "l",
+                            "128": "a",
+                            "129": "y",
+                            "13": "\u003e",
+                            "130": "l",
+                            "131": "i",
+                            "132": "s",
+                            "133": "t",
+                            "134": "=",
+                            "135": "D",
+                            "136": "X",
+                            "137": "e",
+                            "138": "Z",
+                            "139": "B",
+                            "14": "\u003c",
+                            "140": "x",
+                            "141": "y",
+                            "142": "p",
+                            "143": "S",
+                            "144": "b",
+                            "145": "c",
+                            "146": "\\",
+                            "147": "\"",
+                            "148": " ",
+                            "149": "f",
+                            "15": "i",
+                            "150": "r",
+                            "151": "a",
+                            "152": "m",
+                            "153": "e",
+                            "154": "b",
+                            "155": "o",
+                            "156": "r",
+                            "157": "d",
+                            "158": "e",
+                            "159": "r",
+                            "16": "f",
+                            "160": "=",
+                            "161": "\\",
+                            "162": "\"",
+                            "163": "0",
+                            "164": "\\",
+                            "165": "\"",
+                            "166": "\u003e",
+                            "167": "\u003c",
+                            "168": "/",
+                            "169": "i",
+                            "17": "r",
+                            "170": "f",
+                            "171": "r",
+                            "172": "a",
+                            "173": "m",
+                            "174": "e",
+                            "175": "\u003e",
+                            "176": "\u003c",
+                            "177": "/",
+                            "178": "d",
+                            "179": "i",
+                            "18": "a",
+                            "180": "v",
+                            "181": "\u003e",
+                            "182": "\"",
+                            "183": ",",
+                            "184": "\"",
+                            "185": "C",
+                            "186": "S",
+                            "187": "S",
+                            "188": "\"",
+                            "189": ":",
+                            "19": "m",
+                            "190": "\"",
+                            "191": ".",
+                            "192": "u",
+                            "193": "n",
+                            "194": "d",
+                            "195": "e",
+                            "196": "r",
+                            "197": "l",
+                            "198": "i",
+                            "199": "n",
+                            "2": "H",
+                            "20": "e",
+                            "200": "e",
+                            "201": " ",
+                            "202": "{",
+                            "203": "\\",
+                            "204": "n",
+                            "205": " ",
+                            "206": " ",
+                            "207": "t",
+                            "208": "e",
+                            "209": "x",
+                            "21": " ",
+                            "210": "t",
+                            "211": "-",
+                            "212": "d",
+                            "213": "e",
+                            "214": "c",
+                            "215": "o",
+                            "216": "r",
+                            "217": "a",
+                            "218": "t",
+                            "219": "i",
+                            "22": "h",
+                            "220": "o",
+                            "221": "n",
+                            "222": ":",
+                            "223": " ",
+                            "224": "u",
+                            "225": "n",
+                            "226": "d",
+                            "227": "e",
+                            "228": "r",
+                            "229": "l",
+                            "23": "e",
+                            "230": "i",
+                            "231": "n",
+                            "232": "e",
+                            "233": ";",
+                            "234": "\\",
+                            "235": "n",
+                            "236": "}",
+                            "237": "\\",
+                            "238": "n",
+                            "239": "\"",
+                            "24": "i",
+                            "240": ",",
+                            "241": "\"",
+                            "242": "J",
+                            "243": "a",
+                            "244": "v",
+                            "245": "a",
+                            "246": "S",
+                            "247": "c",
+                            "248": "r",
+                            "249": "i",
+                            "25": "g",
+                            "250": "p",
+                            "251": "t",
+                            "252": "\"",
+                            "253": ":",
+                            "254": "\"",
+                            "255": "/",
+                            "256": "/",
+                            "257": "J",
+                            "258": "a",
+                            "259": "v",
+                            "26": "h",
+                            "260": "a",
+                            "261": "S",
+                            "262": "c",
+                            "263": "r",
+                            "264": "i",
+                            "265": "p",
+                            "266": "t",
+                            "267": "\\",
+                            "268": "n",
+                            "269": "\"",
+                            "27": "t",
+                            "270": "}",
+                            "28": "=",
+                            "29": "\\",
+                            "3": "T",
+                            "30": "\"",
+                            "31": "1",
+                            "32": "0",
+                            "33": "0",
+                            "34": "%",
+                            "35": "\\",
+                            "36": "\"",
+                            "37": " ",
+                            "38": "s",
+                            "39": "r",
+                            "4": "M",
+                            "40": "c",
+                            "41": "=",
+                            "42": "\\",
+                            "43": "\"",
+                            "44": "h",
+                            "45": "t",
+                            "46": "t",
+                            "47": "p",
+                            "48": "s",
+                            "49": ":",
+                            "5": "L",
+                            "50": "/",
+                            "51": "/",
+                            "52": "w",
+                            "53": "w",
+                            "54": "w",
+                            "55": ".",
+                            "56": "y",
+                            "57": "o",
+                            "58": "u",
+                            "59": "t",
+                            "6": "\"",
+                            "60": "u",
+                            "61": "b",
+                            "62": "e",
+                            "63": ".",
+                            "64": "c",
+                            "65": "o",
+                            "66": "m",
+                            "67": "/",
+                            "68": "e",
+                            "69": "m",
+                            "7": ":",
+                            "70": "b",
+                            "71": "e",
+                            "72": "d",
+                            "73": "/",
+                            "74": "D",
+                            "75": "X",
+                            "76": "e",
+                            "77": "Z",
+                            "78": "B",
+                            "79": "x",
+                            "8": "\"",
+                            "80": "y",
+                            "81": "p",
+                            "82": "S",
+                            "83": "b",
+                            "84": "c",
+                            "85": "?",
+                            "86": "a",
+                            "87": "u",
+                            "88": "t",
+                            "89": "o",
+                            "9": "\u003c",
+                            "90": "p",
+                            "91": "l",
+                            "92": "a",
+                            "93": "y",
+                            "94": "=",
+                            "95": "1",
+                            "96": "\u0026",
+                            "97": "c",
+                            "98": "o",
+                            "99": "n",
+                            "HTML": "\u003cobject width=\"100%\" data=\"https://www.youtube.com/embed/DXeZBxypSbc?autoplay=1\u0026controls=0\u0026showinfo=0\u0026loop=1\u0026playlist=DXeZBxypSbc\"/\u003e"
+                        }
+                    }
+                },
+                "tab": "3b98918b-d3a6-4c43-8894-cfdf41af1950",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "08e25676-1320-4ce3-b86d-8968f9734fbf": {
+                "id": "08e25676-1320-4ce3-b86d-8968f9734fbf",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "backgroundColor": "#c2c2c2",
+                    "label": "Bearing RPM",
+                    "maxValue": 500,
+                    "minValue": 0,
+                    "progressColor": "#008000",
+                    "value": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "f120cb99-708a-4d46-a550-76cc2b33f4e7",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource)\n    return JSON.parse(this.datasource).measurement/10;"
+                        }
+                    }
+                },
+                "tab": "db872c4b-b38f-445b-9da6-3b624e778ecb",
+                "type": "RADIAL_GAUGE_WIDGET_COMPONENT"
+            },
+            "20c49741-9444-4d27-aa89-fa3d4560c31b": {
+                "id": "20c49741-9444-4d27-aa89-fa3d4560c31b",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "arrowColor": "#000000",
+                    "label": "Aggregate Heating Temp",
+                    "labelColor": "#999999",
+                    "maxValue": 400,
+                    "minValue": 0,
+                    "sectionColors": [
+                        {
+                            "fill": "#ff0000"
+                        },
+                        {
+                            "fill": "#ffff00"
+                        },
+                        {
+                            "fill": "#008000"
+                        },
+                        {
+                            "fill": "#8b0000"
+                        }
+                    ],
+                    "sections": [
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        }
+                    ],
+                    "value": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "23197a7a-a075-4e08-a1aa-432177f2cb3a",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource)\n    return JSON.parse(this.datasource).measurement;"
+                        }
+                    }
+                },
+                "tab": "83fe6e02-d83a-45b0-a27d-df574b2312ef",
+                "type": "SPEEDOMETER_WIDGET"
+            },
+            "304087b6-a90a-4ccd-9294-89defdc0bbca": {
+                "id": "304087b6-a90a-4ccd-9294-89defdc0bbca",
+                "props": {},
+                "type": ""
+            },
+            "30c4742c-ec24-4a65-a1ec-cbc90b09efd7": {
+                "id": "30c4742c-ec24-4a65-a1ec-cbc90b09efd7",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "brushStroke": "#6e8592",
+                    "chartData": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "6abc9060-db20-4641-bd2e-cc68789840a7",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource.results;"
+                        }
+                    },
+                    "chartMarginBottom": 0,
+                    "chartMarginLeft": 0,
+                    "chartMarginRight": 0,
+                    "chartMarginTop": 20,
+                    "legendColor": "#000000",
+                    "legendHorizontalAlign": "center",
+                    "legendIconType": "square",
+                    "legendLayout": "horizontal",
+                    "legendVerticalAlign": "bottom",
+                    "lineColors": [
+                        {
+                            "stroke": "#ff9e00"
+                        },
+                        {
+                            "stroke": "#6E93A8"
+                        },
+                        {
+                            "stroke": "#DBA5A8"
+                        },
+                        {
+                            "stroke": "#E8E7C6"
+                        }
+                    ],
+                    "lines": [
+                        {
+                            "dataKey": "Heating Air Temp",
+                            "type": "basis"
+                        }
+                    ],
+                    "referenceLines": [],
+                    "showBrush": false,
+                    "showDots": false,
+                    "showGrid": true,
+                    "showHorizontalGrid": true,
+                    "showLegend": true,
+                    "showTooltip": true,
+                    "showVerticalGrid": true,
+                    "xAxisDataKey": "timestamp",
+                    "xAxisOrientation": "bottom",
+                    "xAxisPaddingLeft": 0,
+                    "xAxisPaddingRight": 0,
+                    "yAxes": [
+                        {
+                            "orientation": "left"
+                        }
+                    ]
+                },
+                "tab": "9c387810-ff15-4951-9418-298016596fd7",
+                "type": "LINE_CHART_WIDGET_COMPONENT"
+            },
+            "387426b7-c3de-4c7a-b4b3-893b116dece5": {
+                "id": "387426b7-c3de-4c7a-b4b3-893b116dece5",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "arrowColor": "#000000",
+                    "label": "Drying Air Temp",
+                    "labelColor": "#999999",
+                    "maxValue": 800,
+                    "minValue": 0,
+                    "sectionColors": [
+                        {
+                            "fill": "#ff0000"
+                        },
+                        {
+                            "fill": "#ffff00"
+                        },
+                        {
+                            "fill": "#008000"
+                        },
+                        {
+                            "fill": "#8b0000"
+                        }
+                    ],
+                    "sections": [
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        }
+                    ],
+                    "value": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "3ce99a9a-5be5-40eb-8f31-d68a63d7ead9",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource)\n    return JSON.parse(this.datasource).measurement;"
+                        }
+                    }
+                },
+                "tab": "9c387810-ff15-4951-9418-298016596fd7",
+                "type": "SPEEDOMETER_WIDGET"
+            },
+            "3c19557d-343b-4f1d-a8af-5ddc28f48afb": {
+                "id": "3c19557d-343b-4f1d-a8af-5ddc28f48afb",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "brushStroke": "#6e8592",
+                    "chartData": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "3dcebbdf-a66a-455d-959b-fe67f6c13e7f",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource.results;"
+                        }
+                    },
+                    "chartMarginBottom": 0,
+                    "chartMarginLeft": 0,
+                    "chartMarginRight": 0,
+                    "chartMarginTop": 0,
+                    "legendColor": "#000000",
+                    "legendHorizontalAlign": "center",
+                    "legendLayout": "horizontal",
+                    "legendVerticalAlign": "bottom",
+                    "lineColors": [
+                        {
+                            "stroke": "#daed4c"
+                        },
+                        {
+                            "stroke": "#6E93A8"
+                        },
+                        {
+                            "stroke": "#DBA5A8"
+                        },
+                        {
+                            "stroke": "#E8E7C6"
+                        }
+                    ],
+                    "lines": [
+                        {
+                            "dataKey": "Ag Drying Temp",
+                            "type": "basis"
+                        }
+                    ],
+                    "referenceLines": [],
+                    "showBrush": false,
+                    "showDots": false,
+                    "showGrid": true,
+                    "showHorizontalGrid": true,
+                    "showLegend": true,
+                    "showTooltip": true,
+                    "showVerticalGrid": true,
+                    "xAxisDataKey": "timestamp",
+                    "xAxisOrientation": "bottom",
+                    "xAxisPaddingLeft": 0,
+                    "xAxisPaddingRight": 0,
+                    "yAxes": [
+                        {
+                            "orientation": "left"
+                        }
+                    ]
+                },
+                "tab": "83fe6e02-d83a-45b0-a27d-df574b2312ef",
+                "type": "LINE_CHART_WIDGET_COMPONENT"
+            },
+            "3dfd37e8-4e68-4510-ac87-1eccb01421b3": {
+                "id": "3dfd37e8-4e68-4510-ac87-1eccb01421b3",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "brushStroke": "#6e8592",
+                    "chartData": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "fa2a2f8f-c019-4385-8505-c1a4134372ea",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource.results;"
+                        }
+                    },
+                    "chartMarginBottom": 0,
+                    "chartMarginLeft": 0,
+                    "chartMarginRight": 0,
+                    "chartMarginTop": 0,
+                    "legendColor": "#000000",
+                    "legendHorizontalAlign": "center",
+                    "legendLayout": "horizontal",
+                    "legendVerticalAlign": "bottom",
+                    "lineColors": [
+                        {
+                            "stroke": "#008600"
+                        },
+                        {
+                            "stroke": "#6E93A8"
+                        },
+                        {
+                            "stroke": "#DBA5A8"
+                        },
+                        {
+                            "stroke": "#E8E7C6"
+                        }
+                    ],
+                    "lines": [
+                        {
+                            "dataKey": "Drying Air Temp",
+                            "type": "basis"
+                        }
+                    ],
+                    "referenceLines": [],
+                    "showBrush": false,
+                    "showDots": false,
+                    "showGrid": true,
+                    "showHorizontalGrid": true,
+                    "showLegend": true,
+                    "showTooltip": true,
+                    "showVerticalGrid": true,
+                    "xAxisDataKey": "timestamp",
+                    "xAxisOrientation": "bottom",
+                    "xAxisPaddingLeft": 0,
+                    "xAxisPaddingRight": 0,
+                    "yAxes": [
+                        {
+                            "orientation": "left"
+                        }
+                    ]
+                },
+                "tab": "9c387810-ff15-4951-9418-298016596fd7",
+                "type": "LINE_CHART_WIDGET_COMPONENT"
+            },
+            "63e29eaa-6831-4884-b44d-1ffa1d1e65a2": {
+                "id": "63e29eaa-6831-4884-b44d-1ffa1d1e65a2",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "brushStroke": "#6e8592",
+                    "chartData": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "b18137b8-ef77-445c-8e39-a5e8df90f123",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource.results;"
+                        }
+                    },
+                    "chartMarginBottom": 0,
+                    "chartMarginLeft": 0,
+                    "chartMarginRight": 0,
+                    "chartMarginTop": 0,
+                    "legendColor": "#000000",
+                    "legendHorizontalAlign": "center",
+                    "legendLayout": "horizontal",
+                    "legendVerticalAlign": "bottom",
+                    "lineColors": [
+                        {
+                            "stroke": "#977136"
+                        },
+                        {
+                            "stroke": "#6E93A8"
+                        },
+                        {
+                            "stroke": "#DBA5A8"
+                        },
+                        {
+                            "stroke": "#E8E7C6"
+                        }
+                    ],
+                    "lines": [
+                        {
+                            "dataKey": "Ag Heating Temp"
+                        }
+                    ],
+                    "referenceLines": [],
+                    "showBrush": false,
+                    "showDots": false,
+                    "showGrid": true,
+                    "showHorizontalGrid": true,
+                    "showLegend": true,
+                    "showTooltip": true,
+                    "showVerticalGrid": true,
+                    "xAxisDataKey": "timestamp",
+                    "xAxisOrientation": "bottom",
+                    "xAxisPaddingLeft": 0,
+                    "xAxisPaddingRight": 0,
+                    "yAxes": [
+                        {
+                            "orientation": "left"
+                        }
+                    ]
+                },
+                "tab": "83fe6e02-d83a-45b0-a27d-df574b2312ef",
+                "type": "LINE_CHART_WIDGET_COMPONENT"
+            },
+            "6a1e0187-240c-491a-a490-1b4340e355b7": {
+                "id": "6a1e0187-240c-491a-a490-1b4340e355b7",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "backgroundColor": "#c2c2c2",
+                    "label": "Bearing Temp",
+                    "maxValue": 500,
+                    "minValue": 0,
+                    "progressColor": "#ff0000",
+                    "value": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "d33de48d-975e-40ec-9445-45c3e8243d74",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource)\n    return JSON.parse(this.datasource).measurement;"
+                        }
+                    }
+                },
+                "tab": "db872c4b-b38f-445b-9da6-3b624e778ecb",
+                "type": "RADIAL_GAUGE_WIDGET_COMPONENT"
+            },
+            "701e8b88-1afa-41f3-91ee-84ce0b9eea9d": {
+                "id": "701e8b88-1afa-41f3-91ee-84ce0b9eea9d",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "arrowColor": "#000000",
+                    "label": "Exhaust Air Temp",
+                    "labelColor": "#999999",
+                    "maxValue": 600,
+                    "minValue": 0,
+                    "sectionColors": [
+                        {
+                            "fill": "#ff0000"
+                        },
+                        {
+                            "fill": "#ffff00"
+                        },
+                        {
+                            "fill": "#008000"
+                        },
+                        {
+                            "fill": "#8b0000"
+                        }
+                    ],
+                    "sections": [
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        }
+                    ],
+                    "value": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "26b714c8-caee-4e52-b98f-8f112018d073",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource)\n    return JSON.parse(this.datasource).measurement;"
+                        }
+                    }
+                },
+                "tab": "9c387810-ff15-4951-9418-298016596fd7",
+                "type": "SPEEDOMETER_WIDGET"
+            },
+            "758b9491-5c76-40f1-95d5-9f0db7cbb793": {
+                "id": "758b9491-5c76-40f1-95d5-9f0db7cbb793",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "brushStroke": "#6e8592",
+                    "chartData": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "acd3ec13-5200-4821-b8a9-e3f02fcaec41",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource.results;"
+                        }
+                    },
+                    "chartMarginBottom": 0,
+                    "chartMarginLeft": 0,
+                    "chartMarginRight": 0,
+                    "chartMarginTop": 0,
+                    "legendColor": "#000000",
+                    "legendHorizontalAlign": "center",
+                    "legendLayout": "horizontal",
+                    "legendVerticalAlign": "bottom",
+                    "lineColors": [
+                        {
+                            "stroke": "#1a8278"
+                        },
+                        {
+                            "stroke": "#6E93A8"
+                        },
+                        {
+                            "stroke": "#DBA5A8"
+                        },
+                        {
+                            "stroke": "#E8E7C6"
+                        }
+                    ],
+                    "lines": [
+                        {
+                            "dataKey": "Exhaust Air Temp",
+                            "type": "basis"
+                        }
+                    ],
+                    "referenceLines": [],
+                    "showBrush": false,
+                    "showDots": false,
+                    "showGrid": true,
+                    "showHorizontalGrid": true,
+                    "showLegend": true,
+                    "showTooltip": true,
+                    "showVerticalGrid": true,
+                    "xAxisDataKey": "timestamp",
+                    "xAxisOrientation": "bottom",
+                    "xAxisPaddingLeft": 0,
+                    "xAxisPaddingRight": 0,
+                    "yAxes": [
+                        {
+                            "orientation": "left"
+                        }
+                    ]
+                },
+                "tab": "9c387810-ff15-4951-9418-298016596fd7",
+                "type": "LINE_CHART_WIDGET_COMPONENT"
+            },
+            "7a259898-2ed0-4093-973e-66c4d12dae8a": {
+                "id": "7a259898-2ed0-4093-973e-66c4d12dae8a",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".underline {\n  text-decoration: underline;\n}\n",
+                                "HTML": "\u003cdiv class=\"text-center underline\"\u003e\n  \u003ch2\u003eHTML Widget\u003c/h2\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\n"
+                            }
+                        },
+                        "value": {
+                            "CSS": "",
+                            "HTML": "\u003ciframe src=\"https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d426932.1680106541!2d-111.958114!3d33.281999!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C+Arizona!3m2!1d33.4483771!2d-112.0740373!4m5!1s0x872af8c3f51f2c71%3A0xb7f636beee063aad!2sCasa+Blanca%2C+Arizona+85121!3m2!1d33.12028!2d-111.88749999999999!5e0!3m2!1sen!2sus!4v1506541624098\u0026z=3\" width=\"100%\" height=\"600\" frameborder=\"0\" style=\"border:0\" allowfullscreen\u003e\u003c/iframe\u003e",
+                            "JavaScript": ""
+                        }
+                    }
+                },
+                "tab": "7a2ebcf7-a290-47a8-9936-192ca711811c",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "7ee44094-5b8c-40d3-aaa0-7adadf4729a2": {
+                "id": "7ee44094-5b8c-40d3-aaa0-7adadf4729a2",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "arrowColor": "#000000",
+                    "label": "Combustion Temp",
+                    "labelColor": "#999999",
+                    "maxValue": 2500,
+                    "minValue": 0,
+                    "sectionColors": [
+                        {
+                            "fill": "#ff0000"
+                        },
+                        {
+                            "fill": "#ffff00"
+                        },
+                        {
+                            "fill": "#008000"
+                        },
+                        {
+                            "fill": "#8b0000"
+                        }
+                    ],
+                    "sections": [
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        }
+                    ],
+                    "value": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "a38e94b6-32c9-4a8c-a6da-5f765ddbec57",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource)\n    return JSON.parse(this.datasource).measurement;"
+                        }
+                    }
+                },
+                "tab": "9c387810-ff15-4951-9418-298016596fd7",
+                "type": "SPEEDOMETER_WIDGET"
+            },
+            "86300222-8b0e-4420-b305-93871923f65d": {
+                "id": "86300222-8b0e-4420-b305-93871923f65d",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".underline {\n  text-decoration: underline;\n}\n",
+                                "HTML": "\u003cdiv class=\"text-center underline\"\u003e\n  \u003ch2\u003eHTML Widget\u003c/h2\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\n"
+                            }
+                        },
+                        "value": {
+                            "CSS": "\n",
+                            "HTML": "\u003cimg height=\"100%\" src=\"https://s3.amazonaws.com/uploads.hipchat.com/76688/4619737/WrwbtKGkBREuz3I/plantdiagram.png\"/\u003e",
+                            "JavaScript": "//JavaScript\n"
+                        }
+                    }
+                },
+                "tab": "6032735c-fc89-4040-a359-11f2f928ee1d",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "8c3535cf-b2e9-4441-a072-49b4a3a57f11": {
+                "id": "8c3535cf-b2e9-4441-a072-49b4a3a57f11",
+                "props": {},
+                "type": ""
+            },
+            "8c7d59e9-0529-4f26-a98c-95ba8ea12a7a": {
+                "id": "8c7d59e9-0529-4f26-a98c-95ba8ea12a7a",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "72465f05-b962-4145-9de5-99b860e84449",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": "tr {\n    white-space:nowrap;\n   line-height: 8px;\n   min-height: px;\n   height: 5px;\n}",
+                                "HTML": "\u003cdiv id=\"alerts\"\u003e\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\nvar alerts= document.getElementById(\"alerts\");\nvar table=document.createElement(\"table\");\ntable.setAttribute(\"class\", \"table table-condensed table-hover mytable\");\nalerts.innerHTML=\"\";\n\nfor (i=0;i\u003cthis.datasource.results.DATA.length;i++) {\n    var tr=document.createElement(\"tr\");\n    var td1=document.createElement(\"td\");\n    var td2=document.createElement(\"td\");\n    var td3=document.createElement(\"td\");\n    td1.innerHTML=this.datasource.results.DATA[i].alertmessage;\n    td2.innerHTML=this.datasource.results.DATA[i].alertvalue;\n    td3.innerHTML=new Date(this.datasource.results.DATA[i].alerttime).toLocaleTimeString();\n    tr.appendChild(td1);\n    tr.appendChild(td2);\n    tr.appendChild(td3);\n    if (\"ExitAggregateTemp\"==this.datasource.results.DATA[i].alertmessage)\n        tr.setAttribute(\"class\", \"small bg-warning\");\n    else \n         tr.setAttribute(\"class\", \"small bg-danger\");\n    table.appendChild(tr);\n    alerts.appendChild(table);\n}   "
+                            }
+                        }
+                    }
+                },
+                "tab": "5ab6f02d-80be-4916-8977-8a86f7d7a7d2",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "9423d61c-7298-4321-a636-5c5b8704c915": {
+                "id": "9423d61c-7298-4321-a636-5c5b8704c915",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".underline {\n  text-decoration: underline;\n}\n",
+                                "HTML": "\u003cdiv class=\"text-center underline\"\u003e\n  \u003ch2\u003eHTML Widget\u003c/h2\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\n"
+                            }
+                        },
+                        "value": {
+                            "CSS": "",
+                            "HTML": "\u003cimg width=\"100%\" src=\"https://s3.amazonaws.com/uploads.hipchat.com/76688/4619737/ZxUrB2z7WsUKs1H/ClearBlade®%20logo%20horiz.png\" /\u003e",
+                            "JavaScript": "//JavaScript\n"
+                        }
+                    }
+                },
+                "tab": "7d162da6-9d53-421f-b0f7-370eeb445354",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "94738c68-908d-4030-940b-8448f2b64a5c": {
+                "id": "94738c68-908d-4030-940b-8448f2b64a5c",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "arrowColor": "#000000",
+                    "label": "Aggregate Drying Temp",
+                    "labelColor": "#999999",
+                    "maxValue": 600,
+                    "minValue": 0,
+                    "sectionColors": [
+                        {
+                            "fill": "#ff0000"
+                        },
+                        {
+                            "fill": "#ffff00"
+                        },
+                        {
+                            "fill": "#008000"
+                        },
+                        {
+                            "fill": "#8b0000"
+                        }
+                    ],
+                    "sections": [
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        }
+                    ],
+                    "value": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "18febd1f-fdd0-4613-ab41-052d1b7270bd",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource)\n    return JSON.parse(this.datasource).measurement;"
+                        }
+                    }
+                },
+                "tab": "83fe6e02-d83a-45b0-a27d-df574b2312ef",
+                "type": "SPEEDOMETER_WIDGET"
+            },
+            "9b19bb54-f515-43ec-9cc5-2cd9f27363d0": {
+                "id": "9b19bb54-f515-43ec-9cc5-2cd9f27363d0",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".underline {\n  text-decoration: underline;\n}\n",
+                                "HTML": "\u003cdiv class=\"text-center underline\"\u003e\n  \u003ch2\u003eHTML Widget\u003c/h2\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\n"
+                            }
+                        },
+                        "value": {
+                            "CSS": "",
+                            "HTML": "\u003ca href=\"http://www.tracepartsonline.net/(S(cfx3kq0mns3q32bge1f1etbx))/partdetails.aspx?Class=TRACE\u0026PartID=32-05052016-093884\u0026descr=DURBAL%20GLE%20/%20GLEX%20Hochleistungs-Gelenklager,%20Gleitpaarung%20Stahl%20/%20DURBAL-Glide%20(PTFE),%20Ma%C3%9Freihe%20E,%20Anschlussma%C3%9Fe%20nach%20DIN%20ISO%2012240-1\" target=\"_blank\"\u003eDIN ISO 12240-1\u003cimg width=\"275\", height=\"200\" src=\"http://www.tracepartsonline.net/PartsDefs/Production/NADELLA/32-05052016-093884/pictures/32-05052016-093884L.gif\"\u003e\u003c/img\u003e\u003c/a\u003e",
+                            "JavaScript": "//JavaScript\n"
+                        }
+                    }
+                },
+                "tab": "db872c4b-b38f-445b-9da6-3b624e778ecb",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "aa58b7bf-aed3-4a84-8246-65c9b6a327cc": {
+                "id": "aa58b7bf-aed3-4a84-8246-65c9b6a327cc",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "brushHeight": 0,
+                    "brushStroke": "#6e8592",
+                    "chartData": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "var range=24*3; //24 hours\nvar d1=new Date(Date.now());\nvar data=[];\nfor (var i=0; i\u003crange; i++)\n    {\n    var nt=d1.getTime() - i*(60 * 60 * 1000) //hours\n        var d=new Date(nt);\n        if (i\u003e15) \n            data.unshift({\"x\": -i, \"temp\":genDP(210,150)})\n        else\n            data.unshift({\"x\": -i, \"temp\":genDP(410,310)})\n    }\n\treturn data;\n\n\nfunction genDP(max,min) {\n\treturn Math.floor(Math.random() * (max - min)) + min;\n}"
+                    },
+                    "chartMarginBottom": 0,
+                    "chartMarginLeft": 0,
+                    "chartMarginRight": 0,
+                    "chartMarginTop": 0,
+                    "legendColor": "#000000",
+                    "legendHorizontalAlign": "center",
+                    "legendIconType": "wye",
+                    "legendLayout": "horizontal",
+                    "legendVerticalAlign": "bottom",
+                    "lineColors": [
+                        {
+                            "stroke": "#a3070c"
+                        },
+                        {
+                            "stroke": "#6E93A8"
+                        },
+                        {
+                            "stroke": "#DBA5A8"
+                        },
+                        {
+                            "stroke": "#E8E7C6"
+                        }
+                    ],
+                    "lines": [
+                        {
+                            "dataKey": "temp",
+                            "type": "basis"
+                        }
+                    ],
+                    "referenceLines": [],
+                    "showBrush": false,
+                    "showDots": false,
+                    "showGrid": true,
+                    "showHorizontalGrid": true,
+                    "showLegend": true,
+                    "showTooltip": true,
+                    "showVerticalGrid": true,
+                    "xAxisDataKey": "x",
+                    "xAxisLabel": "",
+                    "xAxisOrientation": "bottom",
+                    "xAxisPaddingLeft": 0,
+                    "xAxisPaddingRight": 0,
+                    "yAxes": [
+                        {
+                            "label": "",
+                            "orientation": "left"
+                        }
+                    ]
+                },
+                "tab": "db872c4b-b38f-445b-9da6-3b624e778ecb",
+                "type": "LINE_CHART_WIDGET_COMPONENT"
+            },
+            "ba8fcc76-44d6-4e52-a2e6-d8f680fe80f3": {
+                "id": "ba8fcc76-44d6-4e52-a2e6-d8f680fe80f3",
+                "props": {},
+                "type": ""
+            },
+            "bed3f844-4e2c-4c10-977c-12915200f777": {
+                "id": "bed3f844-4e2c-4c10-977c-12915200f777",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "arrowColor": "#000000",
+                    "label": "Aggregate Entry Temp",
+                    "labelColor": "#999999",
+                    "maxValue": 100,
+                    "minValue": 0,
+                    "sectionColors": [
+                        {
+                            "fill": "#ff0000"
+                        },
+                        {
+                            "fill": "#ffff00"
+                        },
+                        {
+                            "fill": "#008000"
+                        },
+                        {
+                            "fill": "#8b0000"
+                        }
+                    ],
+                    "sections": [
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        }
+                    ],
+                    "value": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "2e58c0f7-4b18-4225-8368-46566a5f9caa",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource)\n    return JSON.parse(this.datasource).measurement;"
+                        }
+                    }
+                },
+                "tab": "83fe6e02-d83a-45b0-a27d-df574b2312ef",
+                "type": "SPEEDOMETER_WIDGET"
+            },
+            "brand": {
+                "id": "brand",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "value": "ClearBlade"
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "d04ae71c-6f6d-4948-8cc1-e080f2c101ac": {
+                "id": "d04ae71c-6f6d-4948-8cc1-e080f2c101ac",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "brushStroke": "#6e8592",
+                    "chartData": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "c55db039-f0cb-4260-8df0-bd0b1b8bb537",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource.results;"
+                        }
+                    },
+                    "chartMarginBottom": 0,
+                    "chartMarginLeft": 0,
+                    "chartMarginRight": 0,
+                    "chartMarginTop": 20,
+                    "legendColor": "#000000",
+                    "legendHorizontalAlign": "center",
+                    "legendLayout": "horizontal",
+                    "legendVerticalAlign": "bottom",
+                    "lineColors": [
+                        {
+                            "stroke": "#ff002e"
+                        },
+                        {
+                            "stroke": "#6E93A8"
+                        },
+                        {
+                            "stroke": "#DBA5A8"
+                        },
+                        {
+                            "stroke": "#E8E7C6"
+                        }
+                    ],
+                    "lines": [
+                        {
+                            "dataKey": "Combustion Air Temp",
+                            "type": "basis"
+                        }
+                    ],
+                    "referenceLines": [],
+                    "showBrush": false,
+                    "showDots": false,
+                    "showGrid": true,
+                    "showHorizontalGrid": true,
+                    "showLegend": true,
+                    "showTooltip": true,
+                    "showVerticalGrid": true,
+                    "xAxisDataKey": "timestamp",
+                    "xAxisOrientation": "bottom",
+                    "xAxisPaddingLeft": 0,
+                    "xAxisPaddingRight": 0,
+                    "yAxes": [
+                        {
+                            "orientation": "left",
+                            "paddingBottom": 0,
+                            "paddingTop": 0
+                        }
+                    ]
+                },
+                "tab": "9c387810-ff15-4951-9418-298016596fd7",
+                "type": "LINE_CHART_WIDGET_COMPONENT"
+            },
+            "d1a4f3ab-36c8-41a7-a736-2b4d91727a03": {
+                "id": "d1a4f3ab-36c8-41a7-a736-2b4d91727a03",
+                "props": {},
+                "type": ""
+            },
+            "d2c13a06-eae2-459d-b5dc-8711f2d56e9d": {
+                "id": "d2c13a06-eae2-459d-b5dc-8711f2d56e9d",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "brushStroke": "#6e8592",
+                    "chartData": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "9f573ad3-b5d1-41b8-a670-a9345d85669e",
+                        "incoming_parser": {
+                            "isDebugOn": true,
+                            "value": "return this.datasource.results;"
+                        }
+                    },
+                    "chartMarginBottom": 0,
+                    "chartMarginLeft": 0,
+                    "chartMarginRight": 0,
+                    "chartMarginTop": 0,
+                    "legendColor": "#000000",
+                    "legendHorizontalAlign": "center",
+                    "legendLayout": "horizontal",
+                    "legendVerticalAlign": "bottom",
+                    "lineColors": [
+                        {
+                            "stroke": "#581c67"
+                        },
+                        {
+                            "stroke": "#6E93A8"
+                        },
+                        {
+                            "stroke": "#DBA5A8"
+                        },
+                        {
+                            "stroke": "#E8E7C6"
+                        }
+                    ],
+                    "lines": [
+                        {
+                            "dataKey": "Ag Exit Temp",
+                            "type": "basis"
+                        }
+                    ],
+                    "referenceLines": [],
+                    "showBrush": false,
+                    "showDots": false,
+                    "showGrid": true,
+                    "showHorizontalGrid": true,
+                    "showLegend": true,
+                    "showTooltip": true,
+                    "showVerticalGrid": true,
+                    "xAxisDataKey": "timestamp",
+                    "xAxisOrientation": "bottom",
+                    "xAxisPaddingLeft": 0,
+                    "xAxisPaddingRight": 0,
+                    "yAxes": [
+                        {
+                            "orientation": "left"
+                        }
+                    ]
+                },
+                "tab": "83fe6e02-d83a-45b0-a27d-df574b2312ef",
+                "type": "LINE_CHART_WIDGET_COMPONENT"
+            },
+            "d379fa26-6671-40b3-a67e-5464b8c101bc": {
+                "id": "d379fa26-6671-40b3-a67e-5464b8c101bc",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "arrowColor": "#000000",
+                    "label": "Aggregate Exit Temp",
+                    "labelColor": "#999999",
+                    "maxValue": 400,
+                    "minValue": 0,
+                    "sectionColors": [
+                        {
+                            "fill": "#ff0000"
+                        },
+                        {
+                            "fill": "#ffff00"
+                        },
+                        {
+                            "fill": "#008000"
+                        },
+                        {
+                            "fill": "#8b0000"
+                        }
+                    ],
+                    "sections": [
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        }
+                    ],
+                    "value": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "ab5e9c9a-c388-4c50-ad2a-c3c754408e66",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource)\n    return JSON.parse(this.datasource).measurement; "
+                        }
+                    }
+                },
+                "tab": "83fe6e02-d83a-45b0-a27d-df574b2312ef",
+                "type": "SPEEDOMETER_WIDGET"
+            },
+            "dd4eff63-392e-4100-bb2f-f1d5e4a54327": {
+                "id": "dd4eff63-392e-4100-bb2f-f1d5e4a54327",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "arrowColor": "#000000",
+                    "label": "Heating Air Temp",
+                    "labelColor": "#999999",
+                    "maxValue": 2000,
+                    "minValue": 0,
+                    "sectionColors": [
+                        {
+                            "fill": "#ff0000"
+                        },
+                        {
+                            "fill": "#ffff00"
+                        },
+                        {
+                            "fill": "#008000"
+                        },
+                        {
+                            "fill": "#8b0000"
+                        }
+                    ],
+                    "sections": [
+                        {
+                            "label": "",
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        },
+                        {
+                            "percentage": 25
+                        }
+                    ],
+                    "value": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "29755d0b-8b19-47b9-b6ab-20f2df2ac75a",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return JSON.parse(this.datasource).measurement;"
+                        }
+                    }
+                },
+                "tab": "9c387810-ff15-4951-9418-298016596fd7",
+                "type": "SPEEDOMETER_WIDGET"
+            },
+            "ef0c8462-d589-4173-b6fe-4cfa1eb98275": {
+                "id": "ef0c8462-d589-4173-b6fe-4cfa1eb98275",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".underline {\n  text-decoration: underline;\n}\n",
+                                "HTML": "\u003cdiv class=\"text-center underline\"\u003e\n  \u003ch2\u003eHTML Widget\u003c/h2\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\n"
+                            }
+                        },
+                        "value": {
+                            "CSS": ".underline {\n  text-decoration: underline;\n}\n",
+                            "HTML": "\u003cimg src=\"https://sirocco.accuweather.com/sat_mosaic_640x480_public/rs/isaraz_.gif\" width=\"100%\"/\u003e",
+                            "JavaScript": "//JavaScript\n"
+                        }
+                    }
+                },
+                "tab": "d5c5d2ca-d8ed-4af0-b1a2-595c81f59424",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "f6cd8b10-b19b-4d6d-b2fb-4a61284fb705": {
+                "id": "f6cd8b10-b19b-4d6d-b2fb-4a61284fb705",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "brushStroke": "#6e8592",
+                    "chartData": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "e022b376-dc52-4de8-b296-a012b1634a50",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource.results;"
+                        }
+                    },
+                    "chartMarginBottom": 0,
+                    "chartMarginLeft": 0,
+                    "chartMarginRight": 0,
+                    "chartMarginTop": 0,
+                    "legendColor": "#000000",
+                    "legendHorizontalAlign": "center",
+                    "legendLayout": "horizontal",
+                    "legendVerticalAlign": "bottom",
+                    "lineColors": [
+                        {
+                            "stroke": "#235353"
+                        },
+                        {
+                            "stroke": "#6E93A8"
+                        },
+                        {
+                            "stroke": "#DBA5A8"
+                        },
+                        {
+                            "stroke": "#E8E7C6"
+                        }
+                    ],
+                    "lines": [
+                        {
+                            "dataKey": "Ag Entry Temp",
+                            "type": "basis"
+                        }
+                    ],
+                    "referenceLines": [],
+                    "showBrush": false,
+                    "showDots": false,
+                    "showGrid": true,
+                    "showHorizontalGrid": true,
+                    "showLegend": true,
+                    "showTooltip": true,
+                    "showVerticalGrid": true,
+                    "xAxisDataKey": "timestamp",
+                    "xAxisOrientation": "bottom",
+                    "xAxisPaddingLeft": 0,
+                    "xAxisPaddingRight": 0,
+                    "yAxes": [
+                        {
+                            "orientation": "left"
+                        }
+                    ]
+                },
+                "tab": "83fe6e02-d83a-45b0-a27d-df574b2312ef",
+                "type": "LINE_CHART_WIDGET_COMPONENT"
+            },
+            "flyoutTitle": {
+                "id": "flyoutTitle",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 30,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "return portalTitle"
+                    }
+                },
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "title": {
+                "id": "title",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Trebuchet MS",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "return portalTitle"
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            }
+        }
+    },
+    "description": "Mixing Plant Monitor Demo",
+    "last_updated": "20 Nov 17 15:36 UTC",
+    "name": "Mixing Plant Monitor v2",
+    "system_key": "b498938e0bb6e096ccaae0c9ddfe01",
+    "type": "v2"
+}
